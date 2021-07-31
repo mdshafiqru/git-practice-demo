@@ -16,11 +16,21 @@ class _HomePageState extends State<HomePage> {
         title: Text('Git Practice'),
       ),
       body: Center(
-        child: Text(
-          'This is my git practice app',
-          style: TextStyle(
-            fontSize: 18,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'This is my git practice app',
+              style: TextStyle(
+                fontSize: 18,
+              ),
+            ),
+            SizedBox(height: 10,),
+            ElevatedButton(
+              onPressed: (){}, 
+              child: Text('Click'),
+            ),
+          ],
         ),
       ),
       
